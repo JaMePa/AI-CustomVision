@@ -17,10 +17,10 @@ namespace CustomVisionTest
         static void Main(string[] args)
         {
             // Agrega las claves que obtuviste en la pantalla de configuración del portal customvision.ai 
-            string trainingKey = "72364176e08b421b872494d9ba45e10b";
-            string predictionKey = "4380e058860d4ceabfa432fd75e740bf";
-            string rutaImagenes = @"D:\Images\Train";
-            string ImagenAReconocer = @"D:\Images\Test\ImageToTest.jpg";
+            string trainingKey = "<pon aqui tu clave de training>";
+            string predictionKey = "<pon aqui tu clave de training>";
+            string rutaImagenes = @"D:\Images\Train";                    // cambia esta ruta a la ruta donde residen las imágenes que utilizarás para entrenar
+            string ImagenAReconocer = @"D:\Images\Test\ImageToTest.jpg"; // cambia esta ruta a la ruta donde residen las imágenes que utilizarás para testear/reconocer
 
             // Creamos el API para utilizar los servicios de Custom Vision, dando nuestra Key
             TrainingApi trainingApi = new TrainingApi() { ApiKey = trainingKey };

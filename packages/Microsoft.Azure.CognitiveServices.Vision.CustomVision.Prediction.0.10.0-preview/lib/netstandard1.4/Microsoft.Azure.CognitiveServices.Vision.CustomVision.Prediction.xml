@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.ApiKey">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.PredictImageUrlWithHttpMessagesAsync(System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image url and saves the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the
+            image to be evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate
+            against.
+            The default iteration for the project will be used when not
+            specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.PredictImageWithHttpMessagesAsync(System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image and saves the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate
+            against.
+            The default iteration for the project will be used when not
+            specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.PredictImageUrlWithNoStoreWithHttpMessagesAsync(System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image url without saving the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the
+            image to be evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate
+            against.
+            The default iteration for the project will be used when not
+            specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint.PredictImageWithNoStoreWithHttpMessagesAsync(System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image without saving the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate
+            against.
+            The default iteration for the project will be used when not
+            specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            The headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox.#ctor">
+            <summary>
+            Initializes a new instance of the BoundingBox class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the BoundingBox class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox.Left">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox.Top">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox.Width">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox.Height">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.#ctor">
+            <summary>
+            Initializes a new instance of the ImagePrediction class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.#ctor(System.Guid,System.Guid,System.Guid,System.DateTime,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel})">
+            <summary>
+            Initializes a new instance of the ImagePrediction class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.Id">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.Project">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.Iteration">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.Created">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.Predictions">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.#ctor">
+            <summary>
+            Initializes a new instance of the ImageUrl class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the ImageUrl class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.Url">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel.#ctor">
+            <summary>
+            Initializes a new instance of the PredictionModel class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel.#ctor(System.Double,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.BoundingBox)">
+            <summary>
+            Initializes a new instance of the PredictionModel class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel.Probability">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel.TagId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel.TagName">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.PredictionModel.BoundingBox">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.BaseUri">
+            <summary>
+            The base URI of the service.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.SerializationSettings">
+            <summary>
+            Gets or sets json serialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.DeserializationSettings">
+            <summary>
+            Gets or sets json deserialization settings.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.ApiKey">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.#ctor(System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the PredictionEndpoint class.
+            </summary>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the PredictionEndpoint class.
+            </summary>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the PredictionEndpoint class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">
+            <summary>
+            Initializes a new instance of the PredictionEndpoint class.
+            </summary>
+            <param name='baseUri'>
+            Optional. The base URI of the service.
+            </param>
+            <param name='rootHandler'>
+            Optional. The http client handler used to handle http transport.
+            </param>
+            <param name='handlers'>
+            Optional. The delegating handlers to add to the http client pipeline.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.Initialize">
+            <summary>
+            Initializes client properties.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.PredictImageUrlWithHttpMessagesAsync(System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image url and saves the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.PredictImageWithHttpMessagesAsync(System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image and saves the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.PredictImageUrlWithNoStoreWithHttpMessagesAsync(System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image url without saving the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpoint.PredictImageWithNoStoreWithHttpMessagesAsync(System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">
+            <summary>
+            Predict an image without saving the result
+            </summary>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+            <exception cref="T:Microsoft.Rest.HttpOperationException">
+            Thrown when the operation returned an invalid status code
+            </exception>
+            <exception cref="T:Microsoft.Rest.SerializationException">
+            Thrown when unable to deserialize the response
+            </exception>
+            <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown when a required parameter is null
+            </exception>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+            <return>
+            A response object containing the response body and response headers.
+            </return>
+        </member>
+        <member name="T:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions">
+            <summary>
+            Extension methods for PredictionEndpoint.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageUrl(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String)">
+            <summary>
+            Predict an image url and saves the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageUrlAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)">
+            <summary>
+            Predict an image url and saves the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageUrlWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+            <summary>
+            Predict an image url and saves the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImage(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String)">
+            <summary>
+            Predict an image and saves the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)">
+            <summary>
+            Predict an image and saves the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+            <summary>
+            Predict an image and saves the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageUrlWithNoStore(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String)">
+            <summary>
+            Predict an image url without saving the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageUrlWithNoStoreAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)">
+            <summary>
+            Predict an image url without saving the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageUrlWithNoStoreWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+            <summary>
+            Predict an image url without saving the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageUrl'>
+            An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be
+            evaluated
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageWithNoStore(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String)">
+            <summary>
+            Predict an image without saving the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageWithNoStoreAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Threading.CancellationToken)">
+            <summary>
+            Predict an image without saving the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='cancellationToken'>
+            The cancellation token.
+            </param>
+        </member>
+        <member name="M:Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.PredictionEndpointExtensions.PredictImageWithNoStoreWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.IPredictionEndpoint,System.Guid,System.IO.Stream,System.Nullable{System.Guid},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">
+            <summary>
+            Predict an image without saving the result
+            </summary>
+            <param name='operations'>
+            The operations group for this extension method.
+            </param>
+            <param name='projectId'>
+            The project id
+            </param>
+            <param name='imageData'>
+            </param>
+            <param name='iterationId'>
+            Optional. Specifies the id of a particular iteration to evaluate against.
+            The default iteration for the project will be used when not specified
+            </param>
+            <param name='application'>
+            Optional. Specifies the name of application using the endpoint
+            </param>
+            <param name='customHeaders'>
+            Headers that will be added to request.
+            </param>
+        </member>
+    </members>
+</doc>

@@ -18,7 +18,7 @@ namespace CustomVisionTest
         {
             // Agrega las claves que obtuviste en la pantalla de configuración del portal customvision.ai 
             string trainingKey = "<pon aqui tu clave de training>";
-            string predictionKey = "<pon aqui tu clave de training>";
+            string predictionKey = "<pon aqui tu clave de prediction>";
             string rutaImagenes = @"D:\Images\Train";                    // cambia esta ruta a la ruta donde residen las imágenes que utilizarás para entrenar
             string ImagenAReconocer = @"D:\Images\Test\ImageToTest.jpg"; // cambia esta ruta a la ruta donde residen las imágenes que utilizarás para testear/reconocer
 

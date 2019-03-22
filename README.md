@@ -1,2 +1,2 @@
 # AI-CustomVision
-You can find a step-by-step article about this project at http://azurebrains.com/2018/12/10/artificial-intelligence-utilizando-custom-vision-desde-app/ (spanish lang.)
+If you have reached this repository, it has probably been from a site that has been unauthorized to host author's content. If you wish to receive any clarification or access the content, email me.
